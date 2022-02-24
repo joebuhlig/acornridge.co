@@ -14,7 +14,7 @@ logo: "/assets/images/df_logo.jpg"
 float_logo: true # true, false (default)
 
 # blog cover
-cover: "/assets/images/acorn-ridge-hero.jpg"
+cover: "/assets/images/hero.jpg"
 
 name: 'Acorn Ridge'
 author: 'Dirk Fabisch'
