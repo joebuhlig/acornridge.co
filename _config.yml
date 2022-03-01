@@ -6,18 +6,18 @@ gems:
 # Site settings
 title: "Acorn Ridge"
 description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+   growing deeper
 
 email: beckybuhlig@gmail.com
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/logo.png"
 float_logo: true # true, false (default)
 
 # blog cover
 cover: "/assets/images/hero.jpg"
 
 name: 'Acorn Ridge'
-author: 'Dirk Fabisch'
+author: 'Joe Buhlig'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
