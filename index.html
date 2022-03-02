@@ -31,6 +31,7 @@ layout: default
 <main class="content" role="main">
   <p>{% include newsletter_signup_text.html %}</p>
   {% include ck_form_home.html %}
+<!--
     {% if site.tags.featured %}
     <h5 class="index-headline featured"><span>Featured</span></h5>
 
@@ -74,22 +75,7 @@ layout: default
         </article>
       {% endfor %}
     </div>
-
-    <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Newer posts &rarr;</a>
-        {% else %}
-          <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Newer posts &rarr;</a>
-        {% endif %}
-      {% endif %}
-    </nav>
-
-
+    -->
     <!-- {{!! After all the posts, we have the previous/next pagination links }}
     {{pagination}} -->
 
