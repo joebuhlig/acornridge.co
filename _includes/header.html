@@ -3,4 +3,17 @@
 {% if site.float_logo %}
   <a href="{{ site.url }}{{ site.baseurl }}" class="logo-readium"><span class="logo" style="background-image: url({{ site.logo }})"></span></a>
 {% endif %}
+<div class="teaserimage">
+    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
+        Teaser Image
+    </div>
+</div>
+
+<header class="blog-header">
+    {% if site.logo %}
+      <a class="blog-logo" href="{{site.url}}{{site.baseurl}}" style="background-image: url('{{ site.logo | prepend: site.baseurl }}')">{{ site.title }}</a>
+    {% endif %}
+    <h1 class="blog-title"><a href="/"><img src="/assets/images/acorn-ridge-name.png" /></a></h1>
+    <h2 class="blog-description">{{ site.description }}</h2>
+</header>
 <!-- header end -->
