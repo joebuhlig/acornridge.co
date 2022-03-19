@@ -1,4 +1,5 @@
-{% for class in site.data.classes %}
+{% assign sorted = site.data.classes | sort: 'id' %}
+{% for class in sorted %}
 <div style="padding: 10px 0px;" id='product-component-1647652260602-{{class.id}}'></div>
 {% endfor %}
 <script type="text/javascript">
