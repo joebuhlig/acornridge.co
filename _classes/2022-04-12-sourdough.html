@@ -1,8 +1,8 @@
 ---
 ---
-
-<div id='product-component-1647652260602'></div>
-<div id='product-component-1647652260602-2'></div>
+{% for class in site.data.classes %}
+<div id='product-component-1647652260602-{{class.index}}'></div>
+{% endfor %}
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -173,18 +173,14 @@
     }
     };
     ShopifyBuy.UI.onReady(client).then(function (ui) {
+      {% for class in site.data.classes %}
       ui.createComponent('product', {
-        id: '6829967933521',
-        node: document.getElementById('product-component-1647652260602'),
+          id: '{{class.id}}',
+          node: document.getElementById('product-component-1647652260602-{{class.index}}'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: options,
       });
-      ui.createComponent('product', {
-        id: '6830562213969',
-        node: document.getElementById('product-component-1647652260602-2'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: options,
-      });
+      {% endfor %}
     });
   }
 })();
