@@ -2,6 +2,7 @@
 ---
 
 <div id='product-component-1647652260602'></div>
+<div id='product-component-1647652260602-2'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -27,12 +28,7 @@
       domain: 'acornridge.myshopify.com',
       storefrontAccessToken: '1abe299774ba77ff8d686eec3be7581e',
     });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '6829967933521',
-        node: document.getElementById('product-component-1647652260602'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
+    var options = {
   "product": {
     "styles": {
       "product": {
@@ -175,10 +171,20 @@
       }
     }
   }
-},
+};
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6829967933521',
+        node: document.getElementById('product-component-1647652260602'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: options})();
+      ui.createComponent('product', {
+        id: '6830562213969',
+        node: document.getElementById('product-component-1647652260602-2'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: options})();
       });
-    });
-  }
-})();
-/*]]>*/
+  };
+ /*]]>*/
 </script>

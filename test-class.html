@@ -17,8 +17,10 @@ layout: default
 <hr></hr>
 <div style="padding-top:10px;">
   <h2><center>Upcoming Classes</center></h2>
+  <div style="padding: 15px 0px;">
   {%- for class in site.classes -%}
   {{ class.content }}
   {%- endfor %}
+  </div>
 </div>
 {%- endif %}
