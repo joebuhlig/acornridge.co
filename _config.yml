@@ -13,8 +13,6 @@ email: becky@acornridge.co
 logo: "/assets/images/logo.png"
 float_logo: false # true, false (default)
 
-collections:
-  - classes
   # blog cover
 cover: "/assets/images/hero.jpg"
 

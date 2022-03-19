@@ -1,7 +1,5 @@
----
----
 {% for class in site.data.classes %}
-<div id='product-component-1647652260602-{{class.index}}'></div>
+<div id='product-component-1647652260602-{{class.id}}'></div>
 {% endfor %}
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -176,7 +174,7 @@
       {% for class in site.data.classes %}
       ui.createComponent('product', {
           id: '{{class.id}}',
-          node: document.getElementById('product-component-1647652260602-{{class.index}}'),
+          node: document.getElementById('product-component-1647652260602-{{class.id}}'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: options,
       });
